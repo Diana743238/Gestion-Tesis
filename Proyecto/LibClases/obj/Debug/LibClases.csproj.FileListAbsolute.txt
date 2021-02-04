@@ -1,0 +1,11 @@
+C:\Users\Usuario\usuario_alojado\Desarrollo_de_software\Proyecto\LibClases\bin\Debug\LibClases.dll
+C:\Users\Usuario\usuario_alojado\Desarrollo_de_software\Proyecto\LibClases\bin\Debug\LibClases.pdb
+C:\Users\Usuario\usuario_alojado\Desarrollo_de_software\Proyecto\LibClases\obj\Debug\LibClases.csprojAssemblyReference.cache
+C:\Users\Usuario\usuario_alojado\Desarrollo_de_software\Proyecto\LibClases\obj\Debug\LibClases.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\usuario_alojado\Desarrollo_de_software\Proyecto\LibClases\obj\Debug\LibClases.dll
+C:\Users\Usuario\usuario_alojado\Desarrollo_de_software\Proyecto\LibClases\obj\Debug\LibClases.pdb
+C:\Users\17490\Downloads\Proyecto\LibClases\bin\Debug\LibClases.dll
+C:\Users\17490\Downloads\Proyecto\LibClases\bin\Debug\LibClases.pdb
+C:\Users\17490\Downloads\Proyecto\LibClases\obj\Debug\LibClases.csprojResolveAssemblyReference.cache
+C:\Users\17490\Downloads\Proyecto\LibClases\obj\Debug\LibClases.dll
+C:\Users\17490\Downloads\Proyecto\LibClases\obj\Debug\LibClases.pdb
