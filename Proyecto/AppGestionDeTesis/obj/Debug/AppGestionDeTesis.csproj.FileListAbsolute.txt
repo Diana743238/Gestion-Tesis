@@ -41,6 +41,7 @@ C:\Users\17490\Downloads\Proyecto\AppGestionDeTesis\bin\Debug\LibFormularios.dll
 C:\Users\17490\Downloads\Proyecto\AppGestionDeTesis\bin\Debug\LibClases.dll
 C:\Users\17490\Downloads\Proyecto\AppGestionDeTesis\bin\Debug\LibFormularios.pdb
 C:\Users\17490\Downloads\Proyecto\AppGestionDeTesis\bin\Debug\LibClases.pdb
+<<<<<<< HEAD
 C:\Users\Usuario\usuario_alojado\repositorios\Gestion-Tesis\Proyecto\AppGestionDeTesis\bin\Debug\AppGestionDeTesis.exe.config
 C:\Users\Usuario\usuario_alojado\repositorios\Gestion-Tesis\Proyecto\AppGestionDeTesis\bin\Debug\AppGestionDeTesis.exe
 C:\Users\Usuario\usuario_alojado\repositorios\Gestion-Tesis\Proyecto\AppGestionDeTesis\bin\Debug\AppGestionDeTesis.pdb
@@ -56,3 +57,8 @@ C:\Users\Usuario\usuario_alojado\repositorios\Gestion-Tesis\Proyecto\AppGestionD
 C:\Users\Usuario\usuario_alojado\repositorios\Gestion-Tesis\Proyecto\AppGestionDeTesis\obj\Debug\AppGestionDeTesis.csproj.CopyComplete
 C:\Users\Usuario\usuario_alojado\repositorios\Gestion-Tesis\Proyecto\AppGestionDeTesis\obj\Debug\AppGestionDeTesis.exe
 C:\Users\Usuario\usuario_alojado\repositorios\Gestion-Tesis\Proyecto\AppGestionDeTesis\obj\Debug\AppGestionDeTesis.pdb
+=======
+C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\AppGestionDeTesis\bin\Debug\AppGestionDeTesis.exe.config
+C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\AppGestionDeTesis\obj\Debug\AppGestionDeTesis.exe
+C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\AppGestionDeTesis\obj\Debug\AppGestionDeTesis.pdb
+>>>>>>> 620c24ada0492302a5e2ece3dc9567476690b9b6
