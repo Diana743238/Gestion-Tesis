@@ -41,3 +41,6 @@ C:\Users\17490\Downloads\Proyecto\AppGestionDeTesis\bin\Debug\LibFormularios.dll
 C:\Users\17490\Downloads\Proyecto\AppGestionDeTesis\bin\Debug\LibClases.dll
 C:\Users\17490\Downloads\Proyecto\AppGestionDeTesis\bin\Debug\LibFormularios.pdb
 C:\Users\17490\Downloads\Proyecto\AppGestionDeTesis\bin\Debug\LibClases.pdb
+C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\AppGestionDeTesis\bin\Debug\AppGestionDeTesis.exe.config
+C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\AppGestionDeTesis\obj\Debug\AppGestionDeTesis.exe
+C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\AppGestionDeTesis\obj\Debug\AppGestionDeTesis.pdb
