@@ -1,0 +1,10 @@
+PROVEIDO
+Nro de proveido varchar()
+Descripcion(Comisión Evaluadora de Plan de Tesis,Comision Dictaminante de                     Tesis,Comisión de Jurado de Sustentación de Tesis )
+Tesis(CodTesis,Titulo,Tesista) varchar()
+        ****Tesista(Codigo ,Nombre)
+Comision Revisora(docente1,docente2,....)
+
+tEXPEDIENTE
+   *****FrmGenerarExpediente
+   *****
