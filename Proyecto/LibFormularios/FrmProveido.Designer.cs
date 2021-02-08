@@ -121,7 +121,6 @@
             // 
             this.CodTesis.Location = new System.Drawing.Point(140, 31);
             this.CodTesis.Name = "CodTesis";
-            this.CodTesis.ReadOnly = true;
             this.CodTesis.Size = new System.Drawing.Size(100, 20);
             this.CodTesis.TabIndex = 3;
             this.CodTesis.Leave += new System.EventHandler(this.CodTesis_Leave);

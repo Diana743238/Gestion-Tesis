@@ -14,17 +14,17 @@ namespace LibClases
         public CBuscar()
         {
             conexion = new CConexion();
-            iniciar
         }
 
         //----- METODOS ------------
         //----- TABLA TESIS -------
-        public DataTable mostrarTablaTesis(string NombreTesis)
+        public DataTable mostrarTablaTesis()
         {
             DataTable tablaTesis;
 
-
-
+            string consulta = "select * from TTesis";
+            conexion.EjecutarSelect(consulta);
+            tablaTesis = conexion.Datos.Tables[0];
             return tablaTesis;
         }
         //----- TABLA TESISTAS -----
@@ -32,7 +32,9 @@ namespace LibClases
         {
             DataTable tablaTesistas;
 
-
+            string consulta = "select * from TTesista";
+            conexion.EjecutarSelect(consulta);
+            tablaTesistas = conexion.Datos.Tables[0];
 
             return tablaTesistas;
         }
@@ -41,9 +43,21 @@ namespace LibClases
         {
             DataTable tablaDocentes;
 
-
+            string consulta = "select * from TDocentes";
+            conexion.EjecutarSelect(consulta);
+            tablaDocentes = conexion.Datos.Tables[0];
 
             return tablaDocentes;
+        }
+
+        //----- BUSCAR REGISTRO --------
+        public DataTable buscarRegistro(string Texto, string Tabla, string Columna)
+        {
+            DataTable resultadoBusqueda;
+            string consulta = "select * from "+ Tabla +" where "+Columna+" like '%"+Texto+"%'";
+            conexion.EjecutarSelect(consulta);
+            resultadoBusqueda = conexion.Datos.Tables[0];
+            return resultadoBusqueda;
         }
     }
 }

@@ -29,13 +29,13 @@ namespace LibFormularios
 
         private void BuscarTesis_Click(object sender, EventArgs e)
         {
-            Form Formulario = new FrmBuscarTesis();
+            Form Formulario = new FrmBuscar();
             Formulario.Show();
         }
 
         private void BuscarDocentes_Click(object sender, EventArgs e)
         {
-            Form Formulario = new FrmBuscarDocentes();
+            Form Formulario = new FrmBuscar();
             Formulario.Show();
         }
 
