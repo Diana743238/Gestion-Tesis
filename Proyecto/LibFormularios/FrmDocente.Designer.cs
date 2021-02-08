@@ -369,7 +369,6 @@
             this.Controls.Add(this.Table);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "FrmDocente";
-            this.Text = "Sistema de Gestion de tesis";
             this.Controls.SetChildIndex(this.panelDeBotones, 0);
             this.Controls.SetChildIndex(this.Table, 0);
             this.Controls.SetChildIndex(this.label2, 0);

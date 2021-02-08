@@ -45,8 +45,10 @@
     <Compile Include="CConexion.cs" />
     <Compile Include="CDocentes.cs" />
     <Compile Include="CEntidad.cs" />
+    <Compile Include="CExpediente.cs" />
     <Compile Include="CRequisitos.cs" />
     <Compile Include="CRequisitosSolicitud.cs" />
+    <Compile Include="CTesis.cs" />
     <Compile Include="CTesista.cs" />
     <Compile Include="CTramite.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

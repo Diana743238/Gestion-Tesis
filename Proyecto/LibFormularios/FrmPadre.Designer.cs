@@ -166,8 +166,8 @@
         protected System.Windows.Forms.Label titulo;
         protected System.Windows.Forms.Button btnGuardarPadre;
         protected System.Windows.Forms.Button btnNuevoPadre;
-        protected System.Windows.Forms.Button btnEliminar;
         protected System.Windows.Forms.Button btnSalirPadre;
         protected System.Windows.Forms.Panel panelDeBotones;
+        public System.Windows.Forms.Button btnEliminar;
     }
 }

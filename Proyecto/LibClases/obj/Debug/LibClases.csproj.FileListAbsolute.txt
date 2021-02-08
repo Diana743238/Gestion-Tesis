@@ -15,3 +15,8 @@ C:\Users\Usuario\usuario_alojado\repositorios\Gestion-Tesis\Proyecto\LibClases\o
 C:\Users\Usuario\usuario_alojado\repositorios\Gestion-Tesis\Proyecto\LibClases\obj\Debug\LibClases.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\usuario_alojado\repositorios\Gestion-Tesis\Proyecto\LibClases\obj\Debug\LibClases.dll
 C:\Users\Usuario\usuario_alojado\repositorios\Gestion-Tesis\Proyecto\LibClases\obj\Debug\LibClases.pdb
+C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\LibClases\bin\Debug\LibClases.dll
+C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\LibClases\bin\Debug\LibClases.pdb
+C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\LibClases\obj\Debug\LibClases.csprojResolveAssemblyReference.cache
+C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\LibClases\obj\Debug\LibClases.dll
+C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\LibClases\obj\Debug\LibClases.pdb

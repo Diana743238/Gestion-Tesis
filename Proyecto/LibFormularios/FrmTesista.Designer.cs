@@ -221,10 +221,11 @@
             // DtpFechaNacimiento
             // 
             this.DtpFechaNacimiento.CalendarFont = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DtpFechaNacimiento.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DtpFechaNacimiento.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DtpFechaNacimiento.Location = new System.Drawing.Point(424, 278);
             this.DtpFechaNacimiento.Name = "DtpFechaNacimiento";
-            this.DtpFechaNacimiento.Size = new System.Drawing.Size(260, 23);
+            this.DtpFechaNacimiento.Size = new System.Drawing.Size(119, 22);
             this.DtpFechaNacimiento.TabIndex = 23;
             // 
             // FrmTesista

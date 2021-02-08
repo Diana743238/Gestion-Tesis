@@ -59,20 +59,11 @@ go
 -- Tabla para tesis
 create table TTesis
 ( -- lista de atributos
-CodTesis varchar(10),
-TituloTesis varchar(50) not null,
-Autor1 varchar (6),
-Autor2 varchar (6),
-Autor3 varchar (6),
-Asesor1 varchar (10) ,
-Asesor2 varchar (10) ,
+CodTesis varchar(10)not null,
+Titulo varchar(50) not null,
+ 
 -- definicion de la clave foranea
 primary key (CodTesis),
-foreign key (Autor1) references TTesista(CodTesista),
-foreign key (Autor2) references TTesista(CodTesista),
-foreign key (Autor3) references TTesista(CodTesista),
-foreign key (Asesor1) references TDocentes(CodDocente),
-foreign key (Asesor2) references TDocentes(CodDocente),
 )
 Go
 
@@ -220,13 +211,13 @@ go
 create table TProveido
 ( -- lista de atributos
 codProveido varchar (10) not null,
-FechaEmision date,
+Tipo varchar (20) not null,
+FechaEmision date,--tipos: EvaluacionPlanTesis, EvaluacionTesis
 Nominado1 varchar (10),
 Nominado2 varchar (10),
 Nominado3 varchar (10),
 Nominado4 varchar (10),
 Nominado5 varchar (10),
-tipo varchar (50), --tipos: EvaluacionPlanTesis, EvaluacionTesis
 -- definicion de la clave foranea
 primary key (codProveido),
 foreign key (Nominado1) references TDocentes(CodDocente),
@@ -267,6 +258,23 @@ foreign key (codSolicitud) references TTramites(codTramites),
 foreign key (codRequisito) references TRequisitos(codRequisito),
 )
 Go
+-------------------------------------------------------------------------
+-- CREACION DE LA TABLA REQUISITOS DE EXPEDIENTE
+--------------------------------------------------------------------------
+use BdGestionTesis
+go
+-- Tabla para requisitos de solicitud
+create table TExpediente
+( -- lista de atributos
+NroExpediente  varchar(10)not null,
+Fecha date,
+CodTesis varchar(10) not null,
+-- definicion de la clave foranea
+primary key(NroExpediente),
+foreign key (CodTesis) references TTesis(CodTesis),
+)
+Go
+
  
  
  select *from TDocentes
@@ -292,7 +300,10 @@ insert into TTesista values('072399','Vanessa','Quispe','Salas','68094322','Inge
 insert into TTesista values('100392','Harold Luis','Rivera','Villanueva','09328172','Ingenieria Informatica y de Sistemas','29/05/2018')
 insert into TTesista values('140201','Tomas','Deza','Huamani','65094300','Ingenieria Informatica y de Sistemas','12/08/2020')
 insert into TTesista values('110949','Angelica Luisa','Choque','Nina','70698764','Ingenieria Informatica y de Sistemas','09/11/2017')
-insert into TTesista values('001276','Monica','Huaman','Huillca','719209733','Ingenieria Informatica y de Sistemas','26/12/2000')
+insert into TTesista values('001276','Monica','Huaman','Huillca','71920973','Ingenieria Informatica y de Sistemas','26/12/2000')
 insert into TTesista values('020041','Pablo Hugo','Farfan','Gutierrez','64873302','Ingenieria Informatica y de Sistemas','31/03/2008')
 
-select *from TTesista
+select *from TExpediente
+insert into TExpediente values('020041','12/12/2000','T001')
+insert into TTesis values('T001','Tesis sdnvdkfgnkd')
+select *from TTesis

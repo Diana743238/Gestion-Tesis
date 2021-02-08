@@ -62,3 +62,13 @@ C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\AppGestionDeTesis\
 C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\AppGestionDeTesis\obj\Debug\AppGestionDeTesis.exe
 C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\AppGestionDeTesis\obj\Debug\AppGestionDeTesis.pdb
 >>>>>>> 620c24ada0492302a5e2ece3dc9567476690b9b6
+C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\AppGestionDeTesis\bin\Debug\AppGestionDeTesis.exe
+C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\AppGestionDeTesis\bin\Debug\AppGestionDeTesis.pdb
+C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\AppGestionDeTesis\bin\Debug\LibFormularios.dll
+C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\AppGestionDeTesis\bin\Debug\LibClases.dll
+C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\AppGestionDeTesis\bin\Debug\LibFormularios.pdb
+C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\AppGestionDeTesis\bin\Debug\LibClases.pdb
+C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\AppGestionDeTesis\obj\Debug\AppGestionDeTesis.csprojResolveAssemblyReference.cache
+C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\AppGestionDeTesis\obj\Debug\AppGestionDeTesis.FrmGestionTesis.resources
+C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\AppGestionDeTesis\obj\Debug\AppGestionDeTesis.Properties.Resources.resources
+C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\AppGestionDeTesis\obj\Debug\AppGestionDeTesis.csproj.GenerateResource.Cache
