@@ -40,6 +40,7 @@
             this.tRAMITESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Requisitos = new System.Windows.Forms.ToolStripMenuItem();
             this.RequisitosSolicitud = new System.Windows.Forms.ToolStripMenuItem();
+<<<<<<< HEAD
             this.pROCESOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iNSCRIPCIÓNDEPLANDETESISToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gENERAREXPEDIENTEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,6 +48,9 @@
             this.rEGISTRARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rEGISTRARINFORMESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rEGISTRARRESOLUCIÓNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+=======
+            this.tRAMITESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+>>>>>>> 28d1e63058a456b02821e0f9358a209782f0681d
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -97,7 +101,11 @@
             this.pROCESOSToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 2);
             this.menuStrip1.Name = "menuStrip1";
+<<<<<<< HEAD
             this.menuStrip1.Size = new System.Drawing.Size(555, 30);
+=======
+            this.menuStrip1.Size = new System.Drawing.Size(453, 32);
+>>>>>>> 28d1e63058a456b02821e0f9358a209782f0681d
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -166,6 +174,7 @@
             this.RequisitosSolicitud.Text = "REQUISTOS POR TRAMITE";
             this.RequisitosSolicitud.Click += new System.EventHandler(this.RequisitosSolicitud_Click);
             // 
+<<<<<<< HEAD
             // pROCESOSToolStripMenuItem
             // 
             this.pROCESOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -225,6 +234,15 @@
             this.rEGISTRARRESOLUCIÓNToolStripMenuItem.Name = "rEGISTRARRESOLUCIÓNToolStripMenuItem";
             this.rEGISTRARRESOLUCIÓNToolStripMenuItem.Size = new System.Drawing.Size(327, 26);
             this.rEGISTRARRESOLUCIÓNToolStripMenuItem.Text = "REGISTRAR RESOLUCIÓN";
+=======
+            // tRAMITESToolStripMenuItem
+            // 
+            this.tRAMITESToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tRAMITESToolStripMenuItem.Name = "tRAMITESToolStripMenuItem";
+            this.tRAMITESToolStripMenuItem.Size = new System.Drawing.Size(341, 28);
+            this.tRAMITESToolStripMenuItem.Text = "TRAMITES";
+            this.tRAMITESToolStripMenuItem.Click += new System.EventHandler(this.tRAMITESToolStripMenuItem_Click);
+>>>>>>> 28d1e63058a456b02821e0f9358a209782f0681d
             // 
             // pictureBox1
             // 

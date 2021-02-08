@@ -49,6 +49,7 @@ namespace AppGestionDeTesis
             Formulario.Show();
         }
 
+<<<<<<< HEAD
         private void gENERAREXPEDIENTEToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form Formulario = new FrmExpediente();
@@ -59,5 +60,7 @@ namespace AppGestionDeTesis
         {
 
         }
+=======
+>>>>>>> 28d1e63058a456b02821e0f9358a209782f0681d
     }
 }

@@ -57,6 +57,7 @@ C:\Users\Usuario\usuario_alojado\repositorios\Gestion-Tesis\Proyecto\LibFormular
 C:\Users\Usuario\usuario_alojado\repositorios\Gestion-Tesis\Proyecto\LibFormularios\obj\Debug\LibFormularios.csproj.CopyComplete
 C:\Users\Usuario\usuario_alojado\repositorios\Gestion-Tesis\Proyecto\LibFormularios\obj\Debug\LibFormularios.dll
 C:\Users\Usuario\usuario_alojado\repositorios\Gestion-Tesis\Proyecto\LibFormularios\obj\Debug\LibFormularios.pdb
+<<<<<<< HEAD
 C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\LibFormularios\bin\Debug\LibFormularios.dll
 C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\LibFormularios\bin\Debug\LibFormularios.pdb
 C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\LibFormularios\bin\Debug\LibClases.dll
@@ -74,3 +75,6 @@ C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\LibFormularios\obj
 C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\LibFormularios\obj\Debug\LibFormularios.pdb
 C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\LibFormularios\obj\Debug\LibFormularios.FrmExpediente.resources
 C:\Users\17490\OneDrive\Escritorio\Git\Gestion-Tesis\Proyecto\LibFormularios\obj\Debug\LibFormularios.FrmBuscar.resources
+=======
+C:\Users\Usuario\usuario_alojado\repositorios\Gestion-Tesis\Proyecto\LibFormularios\obj\Debug\LibFormularios.FrmProveido.resources
+>>>>>>> 28d1e63058a456b02821e0f9358a209782f0681d
