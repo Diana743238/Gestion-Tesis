@@ -44,17 +44,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscar.Designer.cs">
+      <DependentUpon>FrmBuscar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDocente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmDocente.Designer.cs">
       <DependentUpon>FrmDocente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmExpediente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExpediente.Designer.cs">
+      <DependentUpon>FrmExpediente.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPadre.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmPadre.Designer.cs">
       <DependentUpon>FrmPadre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProveido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProveido.Designer.cs">
+      <DependentUpon>FrmProveido.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmRequisitos.cs">
       <SubType>Form</SubType>
@@ -94,11 +112,20 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmBuscar.resx">
+      <DependentUpon>FrmBuscar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmDocente.resx">
       <DependentUpon>FrmDocente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmExpediente.resx">
+      <DependentUpon>FrmExpediente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPadre.resx">
       <DependentUpon>FrmPadre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProveido.resx">
+      <DependentUpon>FrmProveido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRequisitos.resx">
       <DependentUpon>FrmRequisitos.cs</DependentUpon>

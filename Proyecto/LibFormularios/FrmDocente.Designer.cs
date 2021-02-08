@@ -369,7 +369,6 @@
             this.Controls.Add(this.Table);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "FrmDocente";
-            this.Text = "Sistema de Gestion de tesis";
             this.Controls.SetChildIndex(this.panelDeBotones, 0);
             this.Controls.SetChildIndex(this.Table, 0);
             this.Controls.SetChildIndex(this.label2, 0);
@@ -402,30 +401,30 @@
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView Table;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox CodDocente;
-        private System.Windows.Forms.TextBox Nombre;
-        private System.Windows.Forms.TextBox ApellidoPaterno;
-        private System.Windows.Forms.TextBox DNI;
-        private System.Windows.Forms.TextBox ApellidoMaterno;
-        private System.Windows.Forms.TextBox Gmail;
-        private System.Windows.Forms.TextBox Telefono;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label LblCategoria;
-        private System.Windows.Forms.TextBox Categoria;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox DepAcademico;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox CboDisponibilidad;
+        protected System.Windows.Forms.Label label2;
+        protected System.Windows.Forms.Label label3;
+        protected System.Windows.Forms.Label label4;
+        protected System.Windows.Forms.Label label5;
+        protected System.Windows.Forms.Label label6;
+        protected System.Windows.Forms.Label label7;
+        protected System.Windows.Forms.Label label8;
+        protected System.Windows.Forms.TextBox CodDocente;
+        protected System.Windows.Forms.TextBox Nombre;
+        protected System.Windows.Forms.TextBox ApellidoPaterno;
+        protected System.Windows.Forms.TextBox DNI;
+        protected System.Windows.Forms.TextBox ApellidoMaterno;
+        protected System.Windows.Forms.TextBox Gmail;
+        protected System.Windows.Forms.TextBox Telefono;
+        protected System.Windows.Forms.Label LblCategoria;
+        protected System.Windows.Forms.TextBox Categoria;
+        protected System.Windows.Forms.Label label9;
+        protected System.Windows.Forms.TextBox DepAcademico;
+        protected System.Windows.Forms.Label label1;
+        protected System.Windows.Forms.ComboBox CboDisponibilidad;
+        protected System.Windows.Forms.DataGridView Table;
     }
 }

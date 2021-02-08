@@ -154,7 +154,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmPadre";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "GESTIÓN DE TESIS";
+            this.Text = "7";
             this.panelDeBotones.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -164,10 +164,13 @@
         #endregion
         private System.Windows.Forms.Panel panel1;
         protected System.Windows.Forms.Label titulo;
-        protected System.Windows.Forms.Button btnGuardarPadre;
         protected System.Windows.Forms.Button btnNuevoPadre;
-        protected System.Windows.Forms.Button btnEliminar;
         protected System.Windows.Forms.Button btnSalirPadre;
         protected System.Windows.Forms.Panel panelDeBotones;
+<<<<<<< HEAD
+        public System.Windows.Forms.Button btnEliminar;
+=======
+        protected System.Windows.Forms.Button btnGuardarPadre;
+>>>>>>> 28d1e63058a456b02821e0f9358a209782f0681d
     }
 }

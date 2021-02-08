@@ -37,10 +37,21 @@
             this.Tramites = new System.Windows.Forms.ToolStripMenuItem();
             this.rEGISTRODETESISTASToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.rEGISTRODEDOCENTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tRAMITESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Requisitos = new System.Windows.Forms.ToolStripMenuItem();
             this.RequisitosSolicitud = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
+            this.pROCESOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iNSCRIPCIÓNDEPLANDETESISToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gENERAREXPEDIENTEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gENERARPROVEIDOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rEGISTRARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rEGISTRARINFORMESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rEGISTRARRESOLUCIÓNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+=======
             this.tRAMITESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+>>>>>>> 28d1e63058a456b02821e0f9358a209782f0681d
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -86,33 +97,39 @@
             this.menuStrip1.Font = new System.Drawing.Font("Maiandra GD", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.iNICIOToolStripMenuItem,
-            this.Tramites});
+            this.Tramites,
+            this.pROCESOSToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 2);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(425, 32);
+<<<<<<< HEAD
+            this.menuStrip1.Size = new System.Drawing.Size(555, 30);
+=======
+            this.menuStrip1.Size = new System.Drawing.Size(453, 32);
+>>>>>>> 28d1e63058a456b02821e0f9358a209782f0681d
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // iNICIOToolStripMenuItem
             // 
-            this.iNICIOToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iNICIOToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iNICIOToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("iNICIOToolStripMenuItem.Image")));
             this.iNICIOToolStripMenuItem.Name = "iNICIOToolStripMenuItem";
-            this.iNICIOToolStripMenuItem.Size = new System.Drawing.Size(105, 28);
+            this.iNICIOToolStripMenuItem.Size = new System.Drawing.Size(102, 26);
             this.iNICIOToolStripMenuItem.Text = "INICIO";
+            this.iNICIOToolStripMenuItem.Click += new System.EventHandler(this.iNICIOToolStripMenuItem_Click);
             // 
             // Tramites
             // 
             this.Tramites.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.rEGISTRODETESISTASToolStripMenuItem1,
             this.rEGISTRODEDOCENTESToolStripMenuItem,
+            this.tRAMITESToolStripMenuItem,
             this.Requisitos,
-            this.RequisitosSolicitud,
-            this.tRAMITESToolStripMenuItem});
-            this.Tramites.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RequisitosSolicitud});
+            this.Tramites.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tramites.Image = ((System.Drawing.Image)(resources.GetObject("Tramites.Image")));
             this.Tramites.Name = "Tramites";
-            this.Tramites.Size = new System.Drawing.Size(220, 28);
+            this.Tramites.Size = new System.Drawing.Size(210, 26);
             this.Tramites.Text = "MANTENIMIENTO";
             // 
             // rEGISTRODETESISTASToolStripMenuItem1
@@ -120,7 +137,7 @@
             this.rEGISTRODETESISTASToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.rEGISTRODETESISTASToolStripMenuItem1.ForeColor = System.Drawing.Color.Black;
             this.rEGISTRODETESISTASToolStripMenuItem1.Name = "rEGISTRODETESISTASToolStripMenuItem1";
-            this.rEGISTRODETESISTASToolStripMenuItem1.Size = new System.Drawing.Size(341, 28);
+            this.rEGISTRODETESISTASToolStripMenuItem1.Size = new System.Drawing.Size(334, 26);
             this.rEGISTRODETESISTASToolStripMenuItem1.Text = "REGISTRO DE TESISTAS";
             this.rEGISTRODETESISTASToolStripMenuItem1.Click += new System.EventHandler(this.rEGISTRODETESISTASToolStripMenuItem1_Click);
             // 
@@ -129,15 +146,23 @@
             this.rEGISTRODEDOCENTESToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.rEGISTRODEDOCENTESToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.rEGISTRODEDOCENTESToolStripMenuItem.Name = "rEGISTRODEDOCENTESToolStripMenuItem";
-            this.rEGISTRODEDOCENTESToolStripMenuItem.Size = new System.Drawing.Size(341, 28);
+            this.rEGISTRODEDOCENTESToolStripMenuItem.Size = new System.Drawing.Size(334, 26);
             this.rEGISTRODEDOCENTESToolStripMenuItem.Text = "REGISTRO DE DOCENTES";
             this.rEGISTRODEDOCENTESToolStripMenuItem.Click += new System.EventHandler(this.rEGISTRODEDOCENTESToolStripMenuItem_Click);
+            // 
+            // tRAMITESToolStripMenuItem
+            // 
+            this.tRAMITESToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tRAMITESToolStripMenuItem.Name = "tRAMITESToolStripMenuItem";
+            this.tRAMITESToolStripMenuItem.Size = new System.Drawing.Size(334, 26);
+            this.tRAMITESToolStripMenuItem.Text = "TRAMITES";
+            this.tRAMITESToolStripMenuItem.Click += new System.EventHandler(this.tRAMITESToolStripMenuItem_Click);
             // 
             // Requisitos
             // 
             this.Requisitos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.Requisitos.Name = "Requisitos";
-            this.Requisitos.Size = new System.Drawing.Size(341, 28);
+            this.Requisitos.Size = new System.Drawing.Size(334, 26);
             this.Requisitos.Text = "REQUISITOS";
             this.Requisitos.Click += new System.EventHandler(this.Requisitos_Click);
             // 
@@ -145,9 +170,79 @@
             // 
             this.RequisitosSolicitud.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.RequisitosSolicitud.Name = "RequisitosSolicitud";
-            this.RequisitosSolicitud.Size = new System.Drawing.Size(341, 28);
-            this.RequisitosSolicitud.Text = "REQUISTOS SOLICITUD";
+            this.RequisitosSolicitud.Size = new System.Drawing.Size(334, 26);
+            this.RequisitosSolicitud.Text = "REQUISTOS POR TRAMITE";
             this.RequisitosSolicitud.Click += new System.EventHandler(this.RequisitosSolicitud_Click);
+            // 
+<<<<<<< HEAD
+            // pROCESOSToolStripMenuItem
+            // 
+            this.pROCESOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.iNSCRIPCIÓNDEPLANDETESISToolStripMenuItem,
+            this.rEGISTRARToolStripMenuItem});
+            this.pROCESOSToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pROCESOSToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pROCESOSToolStripMenuItem.Image")));
+            this.pROCESOSToolStripMenuItem.Name = "pROCESOSToolStripMenuItem";
+            this.pROCESOSToolStripMenuItem.Size = new System.Drawing.Size(143, 26);
+            this.pROCESOSToolStripMenuItem.Text = "PROCESOS";
+            // 
+            // iNSCRIPCIÓNDEPLANDETESISToolStripMenuItem
+            // 
+            this.iNSCRIPCIÓNDEPLANDETESISToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.iNSCRIPCIÓNDEPLANDETESISToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gENERAREXPEDIENTEToolStripMenuItem,
+            this.gENERARPROVEIDOToolStripMenuItem});
+            this.iNSCRIPCIÓNDEPLANDETESISToolStripMenuItem.Name = "iNSCRIPCIÓNDEPLANDETESISToolStripMenuItem";
+            this.iNSCRIPCIÓNDEPLANDETESISToolStripMenuItem.Size = new System.Drawing.Size(389, 26);
+            this.iNSCRIPCIÓNDEPLANDETESISToolStripMenuItem.Text = "INSCRIPCIÓN DE PLAN DE TESIS";
+            // 
+            // gENERAREXPEDIENTEToolStripMenuItem
+            // 
+            this.gENERAREXPEDIENTEToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.gENERAREXPEDIENTEToolStripMenuItem.Name = "gENERAREXPEDIENTEToolStripMenuItem";
+            this.gENERAREXPEDIENTEToolStripMenuItem.Size = new System.Drawing.Size(306, 26);
+            this.gENERAREXPEDIENTEToolStripMenuItem.Text = "GENERAR EXPEDIENTE";
+            this.gENERAREXPEDIENTEToolStripMenuItem.Click += new System.EventHandler(this.gENERAREXPEDIENTEToolStripMenuItem_Click);
+            // 
+            // gENERARPROVEIDOToolStripMenuItem
+            // 
+            this.gENERARPROVEIDOToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.gENERARPROVEIDOToolStripMenuItem.Name = "gENERARPROVEIDOToolStripMenuItem";
+            this.gENERARPROVEIDOToolStripMenuItem.Size = new System.Drawing.Size(306, 26);
+            this.gENERARPROVEIDOToolStripMenuItem.Text = "GENERAR PROVEIDO";
+            // 
+            // rEGISTRARToolStripMenuItem
+            // 
+            this.rEGISTRARToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.rEGISTRARToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.rEGISTRARINFORMESToolStripMenuItem,
+            this.rEGISTRARRESOLUCIÓNToolStripMenuItem});
+            this.rEGISTRARToolStripMenuItem.Name = "rEGISTRARToolStripMenuItem";
+            this.rEGISTRARToolStripMenuItem.Size = new System.Drawing.Size(389, 26);
+            this.rEGISTRARToolStripMenuItem.Text = "REGISTRAR DICTAMEN";
+            // 
+            // rEGISTRARINFORMESToolStripMenuItem
+            // 
+            this.rEGISTRARINFORMESToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.rEGISTRARINFORMESToolStripMenuItem.Name = "rEGISTRARINFORMESToolStripMenuItem";
+            this.rEGISTRARINFORMESToolStripMenuItem.Size = new System.Drawing.Size(327, 26);
+            this.rEGISTRARINFORMESToolStripMenuItem.Text = "REGISTRAR INFORMES";
+            // 
+            // rEGISTRARRESOLUCIÓNToolStripMenuItem
+            // 
+            this.rEGISTRARRESOLUCIÓNToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.rEGISTRARRESOLUCIÓNToolStripMenuItem.Name = "rEGISTRARRESOLUCIÓNToolStripMenuItem";
+            this.rEGISTRARRESOLUCIÓNToolStripMenuItem.Size = new System.Drawing.Size(327, 26);
+            this.rEGISTRARRESOLUCIÓNToolStripMenuItem.Text = "REGISTRAR RESOLUCIÓN";
+=======
+            // tRAMITESToolStripMenuItem
+            // 
+            this.tRAMITESToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tRAMITESToolStripMenuItem.Name = "tRAMITESToolStripMenuItem";
+            this.tRAMITESToolStripMenuItem.Size = new System.Drawing.Size(341, 28);
+            this.tRAMITESToolStripMenuItem.Text = "TRAMITES";
+            this.tRAMITESToolStripMenuItem.Click += new System.EventHandler(this.tRAMITESToolStripMenuItem_Click);
+>>>>>>> 28d1e63058a456b02821e0f9358a209782f0681d
             // 
             // pictureBox1
             // 
@@ -159,14 +254,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(751, 327);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            // 
-            // tRAMITESToolStripMenuItem
-            // 
-            this.tRAMITESToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.tRAMITESToolStripMenuItem.Name = "tRAMITESToolStripMenuItem";
-            this.tRAMITESToolStripMenuItem.Size = new System.Drawing.Size(341, 28);
-            this.tRAMITESToolStripMenuItem.Text = "TRAMITES";
-            this.tRAMITESToolStripMenuItem.Click += new System.EventHandler(this.tRAMITESToolStripMenuItem_Click);
             // 
             // FrmGestionTesis
             // 
@@ -206,6 +293,13 @@
         private System.Windows.Forms.ToolStripMenuItem Requisitos;
         private System.Windows.Forms.ToolStripMenuItem RequisitosSolicitud;
         private System.Windows.Forms.ToolStripMenuItem tRAMITESToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pROCESOSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem iNSCRIPCIÓNDEPLANDETESISToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gENERAREXPEDIENTEToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gENERARPROVEIDOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rEGISTRARToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rEGISTRARINFORMESToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rEGISTRARRESOLUCIÓNToolStripMenuItem;
     }
 }
 

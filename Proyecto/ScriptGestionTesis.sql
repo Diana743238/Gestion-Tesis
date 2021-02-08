@@ -59,20 +59,11 @@ go
 -- Tabla para tesis
 create table TTesis
 ( -- lista de atributos
-CodTesis varchar(10),
-TituloTesis varchar(50) not null,
-Autor1 varchar (6),
-Autor2 varchar (6),
-Autor3 varchar (6),
-Asesor1 varchar (10) ,
-Asesor2 varchar (10) ,
+CodTesis varchar(10)not null,
+Titulo varchar(50) not null,
+ 
 -- definicion de la clave foranea
 primary key (CodTesis),
-foreign key (Autor1) references TTesista(CodTesista),
-foreign key (Autor2) references TTesista(CodTesista),
-foreign key (Autor3) references TTesista(CodTesista),
-foreign key (Asesor1) references TDocentes(CodDocente),
-foreign key (Asesor2) references TDocentes(CodDocente),
 )
 Go
 
@@ -220,13 +211,13 @@ go
 create table TProveido
 ( -- lista de atributos
 codProveido varchar (10) not null,
-FechaEmision date,
+Tipo varchar (20) not null,
+FechaEmision date,--tipos: EvaluacionPlanTesis, EvaluacionTesis
 Nominado1 varchar (10),
 Nominado2 varchar (10),
 Nominado3 varchar (10),
 Nominado4 varchar (10),
 Nominado5 varchar (10),
-tipo varchar (50), --tipos: EvaluacionPlanTesis, EvaluacionTesis
 -- definicion de la clave foranea
 primary key (codProveido),
 foreign key (Nominado1) references TDocentes(CodDocente),
@@ -260,13 +251,64 @@ go
 -- Tabla para requisitos de solicitud
 create table TRequisitosSolicitud
 ( -- lista de atributos
+<<<<<<< HEAD
 	CodTramite varchar (10) not null,
 	CodRequisito int,
 	-- definicion de la clave foranea
 	foreign key (CodTramite) references TTramites(CodTramites),
 	foreign key (CodRequisito) references TRequisitos(CodRequisito)
+=======
+codSolicitud varchar (10) not null,
+codRequisito varchar (10) not null,
+-- definicion de la clave foranea
+foreign key (codSolicitud) references TTramites(codTramites),
+foreign key (codRequisito) references TRequisitos(codRequisito)
+>>>>>>> d92062983a5f9d20e3c0de5d306fb061a0f371aa
 )
 Go
+
+--------------------------------------------------------------------------
+-- CREACION DE LA TABLA PROVEIDO
+--------------------------------------------------------------------------
+use BdGestionTesis
+go
+-- Tabla para proveido
+create table TProveido
+( -- lista de atributos
+nroProveido INT IDENTITY NOT NULL,
+tipo varchar (25) not null,
+codTesis varchar (10) not null,
+Docente1 varchar (10) not null,
+Docente2 varchar (10) not null,
+Docente3 varchar (10) not null,
+Docente4 varchar (10) not null,
+Docente5 varchar (10) not null,
+-- definicion de la clave foranea
+primary key (nroProveido),
+foreign key (Docente1) references TDocentes(CodDocente),
+foreign key (Docente2) references TDocentes(CodDocente),
+foreign key (Docente3) references TDocentes(CodDocente),
+foreign key (Docente4) references TDocentes(CodDocente),
+foreign key (Docente5) references TDocentes(CodDocente)
+)
+Go
+-------------------------------------------------------------------------
+-- CREACION DE LA TABLA REQUISITOS DE EXPEDIENTE
+--------------------------------------------------------------------------
+use BdGestionTesis
+go
+-- Tabla para requisitos de solicitud
+create table TExpediente
+( -- lista de atributos
+NroExpediente  varchar(10)not null,
+Fecha date,
+CodTesis varchar(10) not null,
+-- definicion de la clave foranea
+primary key(NroExpediente),
+foreign key (CodTesis) references TTesis(CodTesis),
+)
+Go
+
  
  
  select *from TDocentes
@@ -295,6 +337,7 @@ insert into TTesista values('110949','Angelica Luisa','Choque','Nina','70698764'
 insert into TTesista values('001276','Monica','Huaman','Huillca','71920973','Ingenieria Informatica y de Sistemas','26/12/2000')
 insert into TTesista values('020041','Pablo Hugo','Farfan','Gutierrez','64873302','Ingenieria Informatica y de Sistemas','31/03/2008')
 
+<<<<<<< HEAD
 select *from TTesista
 
 insert into TTramites values('T001','Solicitud De Evaluación de Plan de Tesis')
@@ -336,3 +379,9 @@ insert into
 select R.CodRequisito,R.Descripcion,T.CodTramites
 from TRequisitos R inner join TTramites T
 on T.CodTramites='T001'
+=======
+select *from TExpediente
+insert into TExpediente values('020041','12/12/2000','T001')
+insert into TTesis values('T001','Tesis sdnvdkfgnkd')
+select *from TTesis
+>>>>>>> d92062983a5f9d20e3c0de5d306fb061a0f371aa

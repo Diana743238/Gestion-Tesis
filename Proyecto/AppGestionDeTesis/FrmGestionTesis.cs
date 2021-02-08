@@ -48,5 +48,19 @@ namespace AppGestionDeTesis
             Form Formulario = new FrmTramites();
             Formulario.Show();
         }
+
+<<<<<<< HEAD
+        private void gENERAREXPEDIENTEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form Formulario = new FrmExpediente();
+            Formulario.Show();
+        }
+
+        private void iNICIOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+=======
+>>>>>>> 28d1e63058a456b02821e0f9358a209782f0681d
     }
 }

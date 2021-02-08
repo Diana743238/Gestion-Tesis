@@ -20,7 +20,11 @@ namespace LibClases
             aDatos = new DataSet();
             aAdaptador = new SqlDataAdapter();
             // realizar la conexion
+<<<<<<< HEAD
             string CadenaConexion = "Data Source=DESKTOP-K209KST; Initial Catalog = BDGestionTesis; Integrated Security = SSPI; ";
+=======
+            string CadenaConexion = "Data Source=DESKTOP-LVULKRN; Initial Catalog = bdGestionTesis; Integrated Security = SSPI; ";
+>>>>>>> d92062983a5f9d20e3c0de5d306fb061a0f371aa
         
             aConexion = new SqlConnection(CadenaConexion);
         }
