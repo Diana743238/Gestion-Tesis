@@ -48,5 +48,6 @@ namespace AppGestionDeTesis
             Form Formulario = new FrmTramites();
             Formulario.Show();
         }
+
     }
 }

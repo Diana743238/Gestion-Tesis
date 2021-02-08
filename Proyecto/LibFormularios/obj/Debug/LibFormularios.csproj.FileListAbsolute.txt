@@ -57,3 +57,4 @@ C:\Users\Usuario\usuario_alojado\repositorios\Gestion-Tesis\Proyecto\LibFormular
 C:\Users\Usuario\usuario_alojado\repositorios\Gestion-Tesis\Proyecto\LibFormularios\obj\Debug\LibFormularios.csproj.CopyComplete
 C:\Users\Usuario\usuario_alojado\repositorios\Gestion-Tesis\Proyecto\LibFormularios\obj\Debug\LibFormularios.dll
 C:\Users\Usuario\usuario_alojado\repositorios\Gestion-Tesis\Proyecto\LibFormularios\obj\Debug\LibFormularios.pdb
+C:\Users\Usuario\usuario_alojado\repositorios\Gestion-Tesis\Proyecto\LibFormularios\obj\Debug\LibFormularios.FrmProveido.resources

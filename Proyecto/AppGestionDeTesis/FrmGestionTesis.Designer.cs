@@ -39,8 +39,8 @@
             this.rEGISTRODEDOCENTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Requisitos = new System.Windows.Forms.ToolStripMenuItem();
             this.RequisitosSolicitud = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tRAMITESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -89,7 +89,7 @@
             this.Tramites});
             this.menuStrip1.Location = new System.Drawing.Point(0, 2);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(425, 32);
+            this.menuStrip1.Size = new System.Drawing.Size(453, 32);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -149,6 +149,14 @@
             this.RequisitosSolicitud.Text = "REQUISTOS SOLICITUD";
             this.RequisitosSolicitud.Click += new System.EventHandler(this.RequisitosSolicitud_Click);
             // 
+            // tRAMITESToolStripMenuItem
+            // 
+            this.tRAMITESToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tRAMITESToolStripMenuItem.Name = "tRAMITESToolStripMenuItem";
+            this.tRAMITESToolStripMenuItem.Size = new System.Drawing.Size(341, 28);
+            this.tRAMITESToolStripMenuItem.Text = "TRAMITES";
+            this.tRAMITESToolStripMenuItem.Click += new System.EventHandler(this.tRAMITESToolStripMenuItem_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
@@ -159,14 +167,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(751, 327);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            // 
-            // tRAMITESToolStripMenuItem
-            // 
-            this.tRAMITESToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.tRAMITESToolStripMenuItem.Name = "tRAMITESToolStripMenuItem";
-            this.tRAMITESToolStripMenuItem.Size = new System.Drawing.Size(341, 28);
-            this.tRAMITESToolStripMenuItem.Text = "TRAMITES";
-            this.tRAMITESToolStripMenuItem.Click += new System.EventHandler(this.tRAMITESToolStripMenuItem_Click);
             // 
             // FrmGestionTesis
             // 

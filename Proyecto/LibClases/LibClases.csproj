@@ -42,9 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CBuscar.cs" />
     <Compile Include="CConexion.cs" />
     <Compile Include="CDocentes.cs" />
     <Compile Include="CEntidad.cs" />
+    <Compile Include="CProveido.cs" />
     <Compile Include="CRequisitos.cs" />
     <Compile Include="CRequisitosSolicitud.cs" />
     <Compile Include="CTesista.cs" />

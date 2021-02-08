@@ -264,7 +264,33 @@ codSolicitud varchar (10) not null,
 codRequisito varchar (10) not null,
 -- definicion de la clave foranea
 foreign key (codSolicitud) references TTramites(codTramites),
-foreign key (codRequisito) references TRequisitos(codRequisito),
+foreign key (codRequisito) references TRequisitos(codRequisito)
+)
+Go
+
+--------------------------------------------------------------------------
+-- CREACION DE LA TABLA PROVEIDO
+--------------------------------------------------------------------------
+use BdGestionTesis
+go
+-- Tabla para proveido
+create table TProveido
+( -- lista de atributos
+nroProveido INT IDENTITY NOT NULL,
+tipo varchar (25) not null,
+codTesis varchar (10) not null,
+Docente1 varchar (10) not null,
+Docente2 varchar (10) not null,
+Docente3 varchar (10) not null,
+Docente4 varchar (10) not null,
+Docente5 varchar (10) not null,
+-- definicion de la clave foranea
+primary key (nroProveido),
+foreign key (Docente1) references TDocentes(CodDocente),
+foreign key (Docente2) references TDocentes(CodDocente),
+foreign key (Docente3) references TDocentes(CodDocente),
+foreign key (Docente4) references TDocentes(CodDocente),
+foreign key (Docente5) references TDocentes(CodDocente)
 )
 Go
  
