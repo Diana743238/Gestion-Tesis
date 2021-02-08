@@ -245,8 +245,8 @@ go
 -- Tabla para requisitos
 create table TRequisitos
 ( -- lista de atributos
-codRequisito varchar (10) not null,
-descripcion varchar (60),
+CodRequisito int identity,
+Descripcion varchar (60),
 -- definicion de la clave foranea
 primary key (CodRequisito)
 )
@@ -260,11 +260,11 @@ go
 -- Tabla para requisitos de solicitud
 create table TRequisitosSolicitud
 ( -- lista de atributos
-codSolicitud varchar (10) not null,
-codRequisito varchar (10) not null,
--- definicion de la clave foranea
-foreign key (codSolicitud) references TTramites(codTramites),
-foreign key (codRequisito) references TRequisitos(codRequisito),
+	CodTramite varchar (10) not null,
+	CodRequisito int,
+	-- definicion de la clave foranea
+	foreign key (CodTramite) references TTramites(CodTramites),
+	foreign key (CodRequisito) references TRequisitos(CodRequisito)
 )
 Go
  
@@ -283,7 +283,7 @@ insert into TDocentes values('D009','Lino Priscilo','Flores','Pacheco','25983372
 insert into TDocentes values('D010','Javier Arturo','Rozas','Huacho','23090767','Javier@unsaac.edu.pe','994092201','Nombrado','Ingenieria Informatica','Disponible')
 
 
-
+set DateFormat dmy;
 insert into TTesista values('012341','Mario','Huaman','Lopez','74092361','Ingenieria Informatica y de Sistemas','21/02/2004')
 insert into TTesista values('091402','Luna Maria','Villa','Rosas','75980212','Ingenieria Informatica y de Sistemas','01/11/2015')
 insert into TTesista values('041201','Jose Carlos','Rimas','Paredes','73090021','Ingenieria Informatica y de Sistemas','30/06/2010')
@@ -292,7 +292,47 @@ insert into TTesista values('072399','Vanessa','Quispe','Salas','68094322','Inge
 insert into TTesista values('100392','Harold Luis','Rivera','Villanueva','09328172','Ingenieria Informatica y de Sistemas','29/05/2018')
 insert into TTesista values('140201','Tomas','Deza','Huamani','65094300','Ingenieria Informatica y de Sistemas','12/08/2020')
 insert into TTesista values('110949','Angelica Luisa','Choque','Nina','70698764','Ingenieria Informatica y de Sistemas','09/11/2017')
-insert into TTesista values('001276','Monica','Huaman','Huillca','719209733','Ingenieria Informatica y de Sistemas','26/12/2000')
+insert into TTesista values('001276','Monica','Huaman','Huillca','71920973','Ingenieria Informatica y de Sistemas','26/12/2000')
 insert into TTesista values('020041','Pablo Hugo','Farfan','Gutierrez','64873302','Ingenieria Informatica y de Sistemas','31/03/2008')
 
 select *from TTesista
+
+insert into TTramites values('T001','Solicitud De Evaluación de Plan de Tesis')
+insert into TTramites values('T002','Solicitud De Evaluación de Tesis')
+insert into TTramites values('T003','Solicitud De Sustentación Oral')
+
+select *from TTramites
+
+insert into TRequisitos values('FICHA DE SEGUIMIENTO')
+insert into TRequisitos values('CARTA DE ACEPTACIÓN DEL ASESOR')
+insert into TRequisitos values('RECIBO DE PAGO')
+insert into TRequisitos values('COPIA DE DNI')
+insert into TRequisitos values('CONSTANCIA DE NO DEUDOR')
+insert into TRequisitos values('EJEMPLAR ANILLADO DE LA TESIS')
+insert into TRequisitos values('COPIA DE DIPLOMA DE BACHILLER')
+insert into TRequisitos values('COPIA DE CERTIFICADO DE ESTUDIOS DE IDIOMA EXTRANJERO')
+insert into TRequisitos values('COPIA DE CERTIFICADO DE ESTUDIOS')
+insert into TRequisitos values('RESOLUCIÓN DE APROBACIÓN DE PLAN DE TESIS')
+insert into TRequisitos values('RESOLUCIÓN FAVORABLE DE LOS DICTAMINANTES')
+
+select * from TRequisitosSolicitud
+insert into TRequisitosSolicitud values('T001',1)
+insert into TRequisitosSolicitud values('T001',2)
+insert into TRequisitosSolicitud values('T001',3)
+insert into TRequisitosSolicitud values('T001',4)
+insert into TRequisitosSolicitud values('T001',7)
+
+select S.CodRequisito,R.Descripcion
+from TRequisitosSolicitud S inner join TRequisitos R
+on S.CodRequisito = R.CodRequisito
+where S.CodTramite='T001'
+
+insert into TRequisitosSolicitud values('T001')
+drop table TRequisitosSolicitud
+
+select * from T1 where CodTramite='T001'
+
+insert into 
+select R.CodRequisito,R.Descripcion,T.CodTramites
+from TRequisitos R inner join TTramites T
+on T.CodTramites='T001'

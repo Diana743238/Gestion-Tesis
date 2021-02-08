@@ -28,18 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.CodSolicitud = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.dgvRequisitosSolicitud = new System.Windows.Forms.DataGridView();
-            this.dgvRequisitos = new System.Windows.Forms.DataGridView();
-            this.Check = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Solicitud = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.CodRequisito = new System.Windows.Forms.TextBox();
+            this.ChkListBoxRequisitos = new System.Windows.Forms.CheckedListBox();
             this.panelDeBotones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRequisitosSolicitud)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRequisitos)).BeginInit();
             this.SuspendLayout();
             // 
             // titulo
@@ -55,97 +49,56 @@
             this.panelDeBotones.Location = new System.Drawing.Point(0, 408);
             this.panelDeBotones.Size = new System.Drawing.Size(753, 60);
             // 
-            // CodSolicitud
-            // 
-            this.CodSolicitud.Location = new System.Drawing.Point(486, 116);
-            this.CodSolicitud.Name = "CodSolicitud";
-            this.CodSolicitud.Size = new System.Drawing.Size(109, 20);
-            this.CodSolicitud.TabIndex = 20;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(351, 115);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(118, 19);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Codigo Tramite:";
-            // 
             // dgvRequisitosSolicitud
             // 
             this.dgvRequisitosSolicitud.AllowUserToAddRows = false;
             this.dgvRequisitosSolicitud.AllowUserToDeleteRows = false;
             this.dgvRequisitosSolicitud.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRequisitosSolicitud.Location = new System.Drawing.Point(15, 305);
+            this.dgvRequisitosSolicitud.Location = new System.Drawing.Point(15, 286);
             this.dgvRequisitosSolicitud.Name = "dgvRequisitosSolicitud";
             this.dgvRequisitosSolicitud.ReadOnly = true;
-            this.dgvRequisitosSolicitud.Size = new System.Drawing.Size(732, 88);
+            this.dgvRequisitosSolicitud.Size = new System.Drawing.Size(732, 107);
             this.dgvRequisitosSolicitud.TabIndex = 18;
-            this.dgvRequisitosSolicitud.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRequisitosSolicitud_CellContentClick);
-            // 
-            // dgvRequisitos
-            // 
-            this.dgvRequisitos.AllowUserToAddRows = false;
-            this.dgvRequisitos.AllowUserToDeleteRows = false;
-            this.dgvRequisitos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRequisitos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Check});
-            this.dgvRequisitos.Location = new System.Drawing.Point(12, 185);
-            this.dgvRequisitos.Name = "dgvRequisitos";
-            this.dgvRequisitos.ReadOnly = true;
-            this.dgvRequisitos.Size = new System.Drawing.Size(732, 101);
-            this.dgvRequisitos.TabIndex = 17;
-            // 
-            // Check
-            // 
-            this.Check.HeaderText = "";
-            this.Check.Name = "Check";
-            this.Check.ReadOnly = true;
             // 
             // Solicitud
             // 
-            this.Solicitud.AutoCompleteCustomSource.AddRange(new string[] {
-            "Solicitud de Evaluacion de Plan de Tesis",
-            "Solicitud de Evaluacion de Tesis",
-            "Solicitud de Sustentacion Oral"});
             this.Solicitud.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Solicitud.FormattingEnabled = true;
-            this.Solicitud.Items.AddRange(new object[] {
-            "Solicitud de evaluacion de plan de tesis",
-            "Solicitud de evaluacion de tesis",
-            "Solicitud de sustentacion oral"});
-            this.Solicitud.Location = new System.Drawing.Point(486, 142);
+            this.Solicitud.Location = new System.Drawing.Point(430, 114);
             this.Solicitud.Name = "Solicitud";
             this.Solicitud.Size = new System.Drawing.Size(210, 21);
             this.Solicitud.TabIndex = 16;
+            this.Solicitud.SelectedIndexChanged += new System.EventHandler(this.ChkListBoxRequisitos_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(351, 144);
+            this.label1.Location = new System.Drawing.Point(225, 116);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 19);
+            this.label1.Size = new System.Drawing.Size(199, 19);
             this.label1.TabIndex = 15;
-            this.label1.Text = "Solicitud";
+            this.label1.Text = "Seleccione tipo de Solicitud:";
             // 
-            // label2
+            // ChkListBoxRequisitos
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 128);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 19);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Codigo Requisito";
-            // 
-            // CodRequisito
-            // 
-            this.CodRequisito.Location = new System.Drawing.Point(177, 129);
-            this.CodRequisito.Name = "CodRequisito";
-            this.CodRequisito.Size = new System.Drawing.Size(131, 20);
-            this.CodRequisito.TabIndex = 22;
+            this.ChkListBoxRequisitos.FormattingEnabled = true;
+            this.ChkListBoxRequisitos.Items.AddRange(new object[] {
+            "FICHA DE SEGUIMIENTO",
+            "CARTA DE ACEPTACIÓN DEL ASESOR",
+            "RECIBO DE PAGO",
+            "COPIA DE DNI",
+            "CONSTANCIA DE NO DEUDOR",
+            "EJEMPLAR ANILLADO DE LA TESIS",
+            "COPIA DE DIPLOMA DE BACHILLER",
+            "COPIA DE CERTIFICADO DE ESTUDIOS DE IDIOMA EXTRANJERO",
+            "COPIA DE CERTIFICADO DE ESTUDIOS",
+            "RESOLUCIÓN DE APROBACIÓN DE PLAN DE TESIS",
+            "RESOLUCIÓN FAVORABLE DE LOS DICTAMINANTES"});
+            this.ChkListBoxRequisitos.Location = new System.Drawing.Point(229, 141);
+            this.ChkListBoxRequisitos.Name = "ChkListBoxRequisitos";
+            this.ChkListBoxRequisitos.Size = new System.Drawing.Size(411, 139);
+            this.ChkListBoxRequisitos.TabIndex = 19;
             // 
             // FrmRequisitoTramite
             // 
@@ -153,12 +106,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(753, 468);
-            this.Controls.Add(this.CodRequisito);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.CodSolicitud);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.ChkListBoxRequisitos);
             this.Controls.Add(this.dgvRequisitosSolicitud);
-            this.Controls.Add(this.dgvRequisitos);
             this.Controls.Add(this.Solicitud);
             this.Controls.Add(this.label1);
             this.Name = "FrmRequisitoTramite";
@@ -167,30 +116,19 @@
             this.Controls.SetChildIndex(this.panelDeBotones, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.Solicitud, 0);
-            this.Controls.SetChildIndex(this.dgvRequisitos, 0);
             this.Controls.SetChildIndex(this.dgvRequisitosSolicitud, 0);
-            this.Controls.SetChildIndex(this.label4, 0);
-            this.Controls.SetChildIndex(this.CodSolicitud, 0);
-            this.Controls.SetChildIndex(this.label2, 0);
-            this.Controls.SetChildIndex(this.CodRequisito, 0);
+            this.Controls.SetChildIndex(this.ChkListBoxRequisitos, 0);
             this.panelDeBotones.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRequisitosSolicitud)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRequisitos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox CodSolicitud;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dgvRequisitosSolicitud;
-        private System.Windows.Forms.DataGridView dgvRequisitos;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Check;
         private System.Windows.Forms.ComboBox Solicitud;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox CodRequisito;
+        private System.Windows.Forms.CheckedListBox ChkListBoxRequisitos;
     }
 }

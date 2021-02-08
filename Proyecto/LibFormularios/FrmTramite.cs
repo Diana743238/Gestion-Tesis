@@ -30,6 +30,7 @@ namespace LibFormularios
         { //-- muestra la informacion contenida en el dataset de CLibro
             CodTramite.Text = aEntidad.ValorAtributo("CodTramites");
             Nombre.Text = aEntidad.ValorAtributo("Descripcion");
+            CodTramite.Enabled = false;
         }
         //-----------------------------------------------------------
         //-- Iniciar los atributos clave y no clave en blanco
@@ -67,6 +68,6 @@ namespace LibFormularios
         {
             ListarRegistros();
         }
- 
+
     }
 }

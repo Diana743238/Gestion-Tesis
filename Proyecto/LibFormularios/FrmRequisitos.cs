@@ -27,8 +27,9 @@ namespace LibFormularios
         //-- Mostrar los datos de un registro
         public override void MostrarDatos()
         { //-- muestra la informacion contenida en el dataset de CLibro
-            CodRequisito.Text = aEntidad.ValorAtributo("codRequisito");
-            Descripcion.Text = aEntidad.ValorAtributo("descripcion");
+            CodRequisito.Text = aEntidad.ValorAtributo("CodRequisito");
+            Descripcion.Text = aEntidad.ValorAtributo("Descripcion");
+            CodRequisito.Enabled = false;
 
         }
         //-----------------------------------------------------------
@@ -67,15 +68,6 @@ namespace LibFormularios
             ListarRegistros();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void CodRequisito_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 

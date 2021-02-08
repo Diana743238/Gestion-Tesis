@@ -62,7 +62,6 @@
             this.CodRequisito.Name = "CodRequisito";
             this.CodRequisito.Size = new System.Drawing.Size(131, 20);
             this.CodRequisito.TabIndex = 0;
-            this.CodRequisito.TextChanged += new System.EventHandler(this.CodRequisito_TextChanged);
             this.CodRequisito.Leave += new System.EventHandler(this.CodRequisito_Leave);
             // 
             // label1

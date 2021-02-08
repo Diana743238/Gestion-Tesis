@@ -40,7 +40,7 @@ namespace LibFormularios
             Categoria.Text = aEntidad.ValorAtributo("Categoria");
             DepAcademico.Text = aEntidad.ValorAtributo("DepAcademico");
             CboDisponibilidad.Text = aEntidad.ValorAtributo("Disponibilidad");
-
+            CodDocente.Enabled = false;
 
         }
         //-----------------------------------------------------------

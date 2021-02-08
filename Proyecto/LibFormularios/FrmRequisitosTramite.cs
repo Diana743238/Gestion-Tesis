@@ -22,12 +22,11 @@ namespace LibFormularios
             aTramite = new CTramite();
             aRequisitos = new CRequisitos();
             IniciarTablaRequisitos();
-            dgvRequisitosSolicitud.DataSource = aEntidad.ListaGeneral();
         }
         public void IniciarTablaRequisitos()
         {
             //-- Recupera la informacion de un registro
-            dgvRequisitos.DataSource = aRequisitos.ListaGeneral();
+            ChkListBoxRequisitos.Items. = aRequisitos.ListaGeneral();
         }
         //============= REDEFINICION DE LOS METODOS VIRTUALES ====================
         //-- Establecer los valores que iran a la tabla
@@ -35,8 +34,7 @@ namespace LibFormularios
         {
             //-- recuperar el codigo del requisito (de la fila seleccionada en el grid)
 
-            return new string[] { CodSolicitud.Text, CodRequisito.Text };
-
+            return new string[] { ChkListBoxRequisitos.CheckedItems.ToString() };
         }
         //----------------------------------------------------------
         public override void InicializarAtributosNoClave()
@@ -47,12 +45,14 @@ namespace LibFormularios
         public override void ListarRegistros()
         { //-- Mostrar los ejemplares relacionados con el libro seleccionado
           // dgvRequisitosSolicitud.DataSource =(aEntidad as CTramite).ListaTramites(CodSolicitud.Text);
-            dgvRequisitosSolicitud.DataSource = aEntidad.ListaGeneral();
+          //dgvRequisitosSolicitud.DataSource = aEntidad.ListaGeneral();
+            string CodTramite= (Solicitud.SelectedValue == null ? "" : Solicitud.SelectedValue.ToString());
+            dgvRequisitosSolicitud.DataSource = (aEntidad as CRequisitosSolicitud).ListarRequisitosSolicitud(CodTramite);
         }
         //-----------------------------------------------------------
         public override bool EsRegistroValido()
         {
-            if (CodSolicitud.Text != "" && Solicitud.Text != "")
+            if (Solicitud.Text != "")
                 return true;
             else
                 return false;
@@ -90,7 +90,7 @@ namespace LibFormularios
             }
         }
         // ===== METODOS PARA MANEJAR LA INFORMACION DEL LIBRO ==========
-        public void LlenarListaLibros()
+        public void LlenarListaRegistroTramites()
         { //-- muestra la lista de tramites en el combo
             Solicitud.DataSource = aTramite.ListaGeneral();
             Solicitud.DisplayMember = "Descripcion";
@@ -99,7 +99,7 @@ namespace LibFormularios
             Solicitud.SelectedIndex = -1;
         }
         // --------------------------------------------------------------------
-        public void MostrarDatosLibro()
+        public void MostrarDatosRegistroTramite()
         { //-- al seleccionar un tramite en el combo, mostrar el resto de datos
           //-- recuperar el codigo del tramite seleccionado
             string CodTramite = (Solicitud.SelectedValue == null ? "" : Solicitud.SelectedValue.ToString());
@@ -107,24 +107,23 @@ namespace LibFormularios
             //-- solicitar a la base de datos la informacion del libro
             aTramite.Registro(new string[] { CodTramite });
             //-- mostrar el resto de informacion
-            CodSolicitud.Text = aTramite.ValorAtributo("CodTramites");
-            //LblAutor.Text = aTramite.ValorAtributo("Nombre");
+            Solicitud.Text = aTramite.ValorAtributo("Nombre");
         }
         // =========================== EVENTOS ==============================
         private void FrmEjemplar_Load(object sender, EventArgs e)
         {
-            LlenarListaLibros();
+            LlenarListaRegistroTramites();
         }
         //---------------------------------------------------------------------
-        private void CboLibro_SelectedIndexChanged(object sender, EventArgs e)
-        { //-- mostrar informacion del libro seleccionado y de ejemplarese relacionados
-            MostrarDatosLibro();
-            ListarRegistros();
-        }
-
         private void dgvRequisitosSolicitud_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void ChkListBoxRequisitos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //MostrarDatosRegistroTramite();
+            ListarRegistros();
         }
     }
 }

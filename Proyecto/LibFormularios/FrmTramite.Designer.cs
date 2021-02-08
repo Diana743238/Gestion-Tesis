@@ -50,18 +50,19 @@
             // 
             // panelDeBotones
             // 
-            this.panelDeBotones.Location = new System.Drawing.Point(0, 393);
+            this.panelDeBotones.Location = new System.Drawing.Point(0, 394);
             this.panelDeBotones.Size = new System.Drawing.Size(762, 60);
             // 
             // Tramites
             // 
             this.Tramites.AllowUserToAddRows = false;
             this.Tramites.AllowUserToDeleteRows = false;
+            this.Tramites.BackgroundColor = System.Drawing.Color.White;
             this.Tramites.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Tramites.Location = new System.Drawing.Point(26, 249);
+            this.Tramites.Location = new System.Drawing.Point(26, 267);
             this.Tramites.Name = "Tramites";
             this.Tramites.ReadOnly = true;
-            this.Tramites.Size = new System.Drawing.Size(724, 123);
+            this.Tramites.Size = new System.Drawing.Size(724, 103);
             this.Tramites.TabIndex = 16;
             this.Tramites.Leave += new System.EventHandler(this.CodTramite_Leave);
             // 
@@ -69,35 +70,36 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(341, 163);
+            this.label2.Location = new System.Drawing.Point(302, 164);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 19);
+            this.label2.Size = new System.Drawing.Size(98, 19);
             this.label2.TabIndex = 15;
-            this.label2.Text = "Descripción ";
+            this.label2.Text = "Descripción :";
             // 
             // Nombre
             // 
-            this.Nombre.Location = new System.Drawing.Point(515, 164);
+            this.Nombre.Location = new System.Drawing.Point(445, 164);
             this.Nombre.Name = "Nombre";
-            this.Nombre.Size = new System.Drawing.Size(192, 20);
+            this.Nombre.Size = new System.Drawing.Size(290, 20);
             this.Nombre.TabIndex = 14;
             // 
             // CodTramite
             // 
-            this.CodTramite.Location = new System.Drawing.Point(515, 129);
+            this.CodTramite.Location = new System.Drawing.Point(445, 128);
             this.CodTramite.Name = "CodTramite";
-            this.CodTramite.Size = new System.Drawing.Size(143, 20);
+            this.CodTramite.Size = new System.Drawing.Size(74, 20);
             this.CodTramite.TabIndex = 13;
+            this.CodTramite.Leave += new System.EventHandler(this.CodTramite_Leave);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(341, 128);
+            this.label1.Location = new System.Drawing.Point(302, 129);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 19);
+            this.label1.Size = new System.Drawing.Size(137, 19);
             this.label1.TabIndex = 12;
-            this.label1.Text = "Código de Trámite";
+            this.label1.Text = "Código de Trámite:";
             // 
             // pictureBox1
             // 
@@ -123,7 +125,6 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmTramites";
             this.Text = " GESTIÓN DE TESIS";
-            this.TextChanged += new System.EventHandler(this.FrmTramites_Load);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.CodTramite, 0);
             this.Controls.SetChildIndex(this.Nombre, 0);
